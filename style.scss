@@ -3,3 +3,35 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-image: linear-gradient(to right, #cdb79fc3, #cdb79f58, #cdb79f04),
+    url(./img/MASTER\ BEDROOM.jpeg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+header {
+  display: flex;
+  padding-top: 50px;
+  > span {
+    margin: left;
+    > a {
+      text-decoration: none;
+      color: black;
+      font-size: 46px;
+      font-weight: bold;
+    }
+  }
+  > nav {
+    > ul {
+      > li {
+        list-style: none;
+        > a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

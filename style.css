@@ -2,4 +2,33 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, rgba(205, 183, 159, 0.7647058824), rgba(205, 183, 159, 0.3450980392), rgba(205, 183, 159, 0.0156862745)), url(./img/MASTER\ BEDROOM.jpeg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  display: flex;
+  padding-top: 50px;
+}
+header > span {
+  margin: left;
+}
+header > span > a {
+  text-decoration: none;
+  color: black;
+  font-size: 46px;
+  font-weight: bold;
+}
+header > nav > ul > li {
+  list-style: none;
+}
+header > nav > ul > li > a {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
