@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Medium.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +9,7 @@
 }
 
 body {
-  background-image: linear-gradient(to right, rgba(205, 183, 159, 0.7647058824), rgba(205, 183, 159, 0.3450980392), rgba(205, 183, 159, 0.0156862745)), url(./img/MASTER\ BEDROOM.jpeg);
+  background-image: linear-gradient(to right, rgba(205, 183, 159, 0.7647058824), rgba(205, 183, 159, 0.5058823529), rgba(205, 183, 159, 0.4431372549)), url(./img/MASTER\ BEDROOM.jpeg);
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
@@ -14,21 +18,80 @@ body {
 }
 
 header {
+  margin: 0px 30px;
   display: flex;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 header > span {
   margin: left;
 }
 header > span > a {
   text-decoration: none;
-  color: black;
+  color: #2d2d2d;
   font-size: 46px;
   font-weight: bold;
+  font-family: Montserrat;
+}
+header > nav {
+  margin: auto;
+  width: 750px;
+}
+header > nav > ul {
+  display: flex;
+  text-align: center;
 }
 header > nav > ul > li {
   list-style: none;
+  padding: 6px 20px;
+  position: relative;
 }
 header > nav > ul > li > a {
   text-decoration: none;
+  position: relative;
+  color: #000;
+  font-size: 20px;
+  font-family: Montserrat;
+}
+header > nav > ul > li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 100%;
+  border-bottom: 2px solid rgb(66, 62, 62);
+  background: linear-gradient(rgba(190, 116, 74, 0.384), rgba(255, 255, 255, 0.24), rgba(190, 116, 74, 0.384));
+  transition: 0.5s;
+}
+header > nav > ul > li:hover::before {
+  width: 100%;
+  border-radius: 5px;
+  border-left: 2px solid rgb(66, 62, 62);
+}
+header .logo {
+  float: right;
+  text-align: center;
+}
+header .logo > ul {
+  display: flex;
+  margin: auto;
+  float: right;
+  transform: translateY(100%);
+}
+header .logo > ul > li {
+  list-style: none;
+  width: 35px;
+}
+header .logo > ul > li > a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.5s;
+  border-radius: 50%;
+  padding: 5px;
+  text-align: center;
+}
+header .logo > ul > li > a:hover {
+  color: white;
+  background-color: #856147;
 }/*# sourceMappingURL=style.css.map */
