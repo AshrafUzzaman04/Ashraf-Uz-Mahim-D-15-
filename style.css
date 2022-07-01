@@ -64,10 +64,95 @@ header > nav > ul > li::before {
   background: linear-gradient(rgba(190, 116, 74, 0.384), rgba(255, 255, 255, 0.24), rgba(190, 116, 74, 0.384));
   transition: 0.5s;
 }
+header > nav > ul > li > ul {
+  position: absolute;
+  top: 104%;
+  left: 50%;
+  width: 100%;
+  background: linear-gradient(#ceac95, #ceac95);
+  transform: translateX(-50%);
+  padding: 10px 40px;
+  display: none;
+  transition: 0.5;
+}
+header > nav > ul > li > ul > li {
+  list-style: none;
+  position: relative;
+  padding: 2px;
+  transition: 0.5s;
+}
+header > nav > ul > li > ul > li > a {
+  text-decoration: none;
+  position: relative;
+  color: #000;
+  font-size: 16 px;
+  font-family: Montserrat;
+  line-height: 40px;
+  transition: 0.5s;
+}
+header > nav > ul > li > ul > li::before {
+  content: "";
+  position: absolute;
+  top: calc(100% - 4px);
+  left: 0;
+  width: 0;
+  border-bottom: 1px solid #8d6a45;
+  transition: 0.5s;
+}
+header > nav > ul > li > ul > li:hover > a {
+  color: rgb(255, 245, 237);
+}
+header > nav > ul > li > ul > li:hover::before {
+  width: 100%;
+}
+header > nav > ul > li > ul > li > ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 150px;
+  background: linear-gradient(#ceac95, #ceac95);
+  padding: 10px 20px;
+  display: none;
+}
+header > nav > ul > li > ul > li > ul > li {
+  list-style-type: none;
+  position: relative;
+}
+header > nav > ul > li > ul > li > ul > li > a {
+  text-decoration: none;
+  position: relative;
+  color: #000;
+  font-size: 16 px;
+  font-family: Montserrat;
+  line-height: 40px;
+  transition: 0.5s;
+}
+header > nav > ul > li > ul > li > ul > li::before {
+  content: "";
+  position: absolute;
+  top: calc(100% - 2px);
+  left: 50%;
+  width: 0;
+  transform: translateX(-50%);
+  border-bottom: 1px solid #8d6a45;
+  transition: 0.5s;
+}
+header > nav > ul > li > ul > li > ul > li:hover > a {
+  color: #fff;
+}
+header > nav > ul > li > ul > li > ul > li:hover::before {
+  width: 100%;
+}
+header > nav > ul > li > ul > li:hover > ul {
+  display: block;
+}
 header > nav > ul > li:hover::before {
   width: 100%;
   border-radius: 5px;
   border-left: 1px solid rgb(66, 62, 62);
+}
+header > nav > ul > li:hover > ul {
+  display: block;
 }
 header .logo {
   float: right;
@@ -263,9 +348,7 @@ header .logo > ul > li > a:hover {
     font-size: 18px;
   }
   .mid_content > .line {
-    background-color: #000;
     width: 400px;
-    height: 1px;
     margin: 60px 0px;
   }
   .mid_content .button > input {
