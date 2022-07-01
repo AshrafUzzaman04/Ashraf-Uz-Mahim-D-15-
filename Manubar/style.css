@@ -154,6 +154,9 @@ header > nav > ul > li:hover::before {
 header > nav > ul > li:hover > ul {
   display: block;
 }
+header > nav > ul > li > .team {
+  padding: 10px 30px;
+}
 header .logo {
   float: right;
   text-align: center;
@@ -162,7 +165,7 @@ header .logo > ul {
   display: flex;
   margin: auto;
   float: right;
-  transform: translateY(100%);
+  transform: translateY(90%);
 }
 header .logo > ul > li {
   list-style: none;
@@ -205,8 +208,26 @@ header .logo > ul > li > a:hover {
   header nav > ul > li > a {
     font-size: 20px;
   }
+  header nav > ul > li > ul {
+    padding: 6px 25px;
+  }
+  header nav > ul > li > ul > li > a {
+    font-size: 12px;
+    line-height: 30px;
+  }
+  header nav > ul > li > ul > li > ul {
+    width: 120px;
+    padding: 4px 12px;
+  }
+  header nav > ul > li > ul > li > ul > li > a {
+    font-size: 12px;
+    line-height: 30px;
+  }
+  header nav > ul > li > .team {
+    padding: 6px 24px;
+  }
   header .logo > ul {
-    transform: translateY(110%);
+    transform: translateY(100%);
   }
   header .logo > ul > li > a {
     font-size: 18px;
@@ -224,7 +245,7 @@ header .logo > ul > li > a:hover {
   }
 
   .logo > ul {
-    transform: translateY(120%);
+    transform: translateY(80%);
   }
   .logo > ul > li {
     width: 30px;

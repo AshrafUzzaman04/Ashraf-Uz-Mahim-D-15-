@@ -127,6 +127,7 @@ header {
                   line-height: 40px;
                   transition: 0.5s;
                 }
+
                 &::before {
                   content: "";
                   position: absolute;
@@ -164,6 +165,9 @@ header {
             display: block;
           }
         }
+        > .team {
+          padding: 10px 30px;
+        }
       }
     }
   }
@@ -175,7 +179,7 @@ header {
       display: flex;
       margin: auto;
       float: right;
-      transform: translateY(100%);
+      transform: translateY(90%);
       > li {
         list-style: none;
         width: 35px;
@@ -236,13 +240,36 @@ header {
           > a {
             font-size: 20px;
           }
+          > ul {
+            padding: 6px 25px;
+            > li {
+              > a {
+                font-size: 12px;
+                line-height: 30px;
+              }
+              > ul {
+                width: 120px;
+                padding: 4px 12px;
+
+                > li {
+                  > a {
+                    font-size: 12px;
+                    line-height: 30px;
+                  }
+                }
+              }
+            }
+          }
+          > .team {
+            padding: 6px 24px;
+          }
         }
       }
     }
 
     .logo {
       > ul {
-        transform: translateY(110%);
+        transform: translateY(100%);
         > li {
           > a {
             font-size: 18px;
@@ -272,7 +299,7 @@ header {
   }
   .logo {
     > ul {
-      transform: translateY(120%);
+      transform: translateY(80%);
       > li {
         width: 30px;
         > a {
